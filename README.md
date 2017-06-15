@@ -1,20 +1,22 @@
-# MyAngular
+# EduManageSystem 教学管理系统
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.5.
+采用angular Cli  1.0.5 版本构建 界面非常好看
 
-## Development server
+## Development server 开发用的服务器
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+运行 ng server 命令 地址栏 输入http://localhost:4200/ app会自动reload
 
 ## Code scaffolding
-
+代码脚手架
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
 
-## Build
+## Build 生成
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+## Running unit tests 单元测试
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
