@@ -8,19 +8,26 @@ import { RouterModule }   from '@angular/router';
 import { AppComponent } from './app.component';
 
 //在这里引入自己定义的模块组件
-import { HeaderComponent } from './Header/Header.component'
+import { HeaderComponent } from './Header/Header.component';
+import { Login } from './Login/login.component';
 
 @NgModule({
 	//声明组件
   declarations: [
     AppComponent,
-	HeaderComponent
+	HeaderComponent,
+	Login
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-	RouterModule
+	RouterModule.forRoot([
+		{
+        path: '',
+        component: Login
+      }
+	])
   ],
   providers: [],
   bootstrap: [AppComponent]
