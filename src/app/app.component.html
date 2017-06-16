@@ -1,4 +1,12 @@
-<h1>
-  {{title}}
-</h1>
-<snail-header></snail-header>
+<!--顶部导航-->
+<header class="nav">
+    <div>
+        <img src="../assets/z_logo1.jpg" alt="logo">
+        <span>教学管理系统</span>
+        <button class="h_login">登录</button>
+    </div>
+</header>
+<!-- 主体内容区域 -->
+<div class="container main-container">
+    <router-outlet></router-outlet>
+</div>

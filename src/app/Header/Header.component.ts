@@ -9,5 +9,5 @@ import { Component } from '@angular/core'; //引入核心模块
 
 //导出组件
 export class HeaderComponent {
-	
+	isShow: boolean = true; //ng-if need declear its type
 }
