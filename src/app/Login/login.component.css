@@ -50,6 +50,7 @@
     font-size: 18px;
     color: #fff;
 	-webkit-appearance: none;
+	cursor:pointer;
 }
 .z_xx {
     padding-right: 5px;
