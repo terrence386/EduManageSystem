@@ -67,6 +67,26 @@
     background: #FFFFFF;
     border-radius: 12px;
 }
+ul, ol {
+    list-style: none;
+}
+.myBtn>ul>li, .myBtn1>ul>li, .myBtn2>ul>li {
+    height: 35px;
+    line-height: 35px;
+    margin-top: 6%;
+}
+.myBtn>ul>li>span, .myBtn1>ul>li>span, .myBtn2>ul>li>span {
+    text-align: right;
+    width: 100px;
+    margin-left: 4.1%;
+    font-size: 14px;
+    color: #4A4A4A;
+    display: inline-block;
+}
+.myBtn>ul>li>input, .myBtn1>ul>li>input, .myBtn2>ul>li>input {
+    width: 300px;
+    height: 32px;
+}
 .myBtn1>p {
     font-size: 20px;
     padding-left: 10px;

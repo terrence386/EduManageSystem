@@ -1,13 +1,26 @@
 import { Component } from '@angular/core'; //引入核心模块
 
+import { LoginService } from './login.service';
+//import { Data } from './login.data';
 //添加元信息
 @Component({
 	selector: 'e-login',
 	templateUrl: './login.component.html',
-	styleUrls: ['./login.component.css']
+	styleUrls: ['./login.component.css'],
+	providers: []
 })
 
 //导出组件
 export class Login {
-	isShow: boolean = true; //ng-if need declear its type
+	//定义是否显示登录框
+	isShowLogin:boolean = true;
+	constructor(
+		//public LoginService: LoginService
+	){
+		//console.log(this.LoginService);
+	}
+	ngOnInit(){//初始化加载事件 onInit
+	document.body.style.margin = '0';
+	console.log(this)
+  }
 }
