@@ -1,0 +1,44 @@
+.l_nav-box-two {
+    width: 100%;
+    height: 70px;
+    background: #F5F5F5;
+    border: 1px solid #E7EBF0;
+    color: #9B9B9B;
+}
+.l_nav-box-two-box {
+    display: inline-block;
+    margin-left: 400px;
+}
+.l_nav-box-two dl {
+    padding: 10px;
+    cursor: pointer;
+}
+dl {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.l_nav-box-two dl dt, .l_nav-box-two dl dd {
+    text-align: center;
+	margin:0;
+}
+.l_nav-box-two dl dt i {
+    font-size: 20px;
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a{
+	text-decoration:none;
+	color: #000;
+	border: 0;
+}

@@ -11,8 +11,10 @@ import { RouterModule }   from '@angular/router';
 import { AppComponent } from './app.component';
 
 //在这里引入自己定义的模块组件
-import { HeaderComponent } from './Header/Header.component';
-import { Login } from './Login/login.component';
+import { HeaderComponent } from './Header/Header.component';//导航
+import { Login } from './Login/login.component';//登录
+import { ElectronicWork } from './ElectronicWork/electronic.component';//电子作业
+import { ElectronicTab } from './ElectronicWork/electronicTab/electronicTab.component';
 
 
 
@@ -21,7 +23,9 @@ import { Login } from './Login/login.component';
   declarations: [
     AppComponent,
 	HeaderComponent,
-	Login
+	Login,
+	ElectronicWork,
+	ElectronicTab
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,11 @@ import { Login } from './Login/login.component';
 		{
         path: '',
         component: Login
-      }
+      },
+	  {
+		path:'elecWork',
+		component:ElectronicWork
+	  }
 	])
   ],
   providers: [

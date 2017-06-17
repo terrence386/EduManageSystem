@@ -1,10 +1,31 @@
 <!--顶部导航-->
-<header class="nav">
-    <div>
+<header class="nav" *ngIf="!this.LoginService.isLoggedin">
+    <div >
         <img src="../assets/z_logo1.jpg" alt="logo">
         <span>教学管理系统</span>
         <button class="h_login" (click)="showLogin()">登录</button>
     </div>
+</header>
+<header *ngIf="this.LoginService.isLoggedin">
+        <div class="nav-inner">
+                <div class="nav-inner1">
+                    <span><img src="../assets/z_logo1.jpg" alt="" style="display: inline-block;height: 25px;width: 80px;padding: 11px 7px 13px 60px;">教学管理系统</span>
+                </div>
+                <div class="nav-inner2">
+                    <ul>
+                        <li><a class="z_cur" href="../electronic_work/authorized-work.html">电子作业</a></li>
+                        <li><a href="../data_view/homework-data.html">数据查看</a> </li>
+                        <li><a href="../inter_class/h_bzdt.html">互动课堂</a> </li>
+                        <li><a href="../message/mes.html">消息</a> </li>
+                        <li><a href="../question_bank/question_1.html">我的题库</a> </li>
+                        <li><a href="../personal/per.html">个人中心</a> </li>
+                    </ul>
+                </div>
+                <div style="margin-right:50px;" class="user-box">
+                    <span><img style="width:30px" src="../assets/mdpi/woman.png" alt="">您好！张老师</span>
+                    <span class="logout">[退出]</span>
+                </div>
+        </div>
 </header>
 <!-- 主体内容区域 -->
 <div class="container main-container">

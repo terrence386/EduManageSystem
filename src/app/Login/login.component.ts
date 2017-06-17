@@ -26,4 +26,7 @@ export class Login {
 	console.log(this)
 	
   }
+   public close(){
+	   this.LoginService.closeLogin();
+   }
 }

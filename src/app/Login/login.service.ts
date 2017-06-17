@@ -2,56 +2,36 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
 import { Http, Headers, Response } from '@angular/http';
-//import { User } from '../model/user-model';
 
 import { Login } from './login.component'
 @Injectable()
 export class LoginService {
-	//data:Object = {
-		isShowLogin:boolean = false
-	//}
+		isShowLogin:boolean = false;
+		isLoggedin: boolean = false;
    constructor(
 	public http:Http,
-	//isShowLogin
    ){}
-	onInit(){
+	onInit(){//初始化加载
 		//console.log(Login)
 	}
-  // public get currentUser():Observable<User>{
-     // // return this.subject.asObservable();
-  // }
 
-  public login(){
-	  
+  public login(){//登录控制
 	  console.log(this)
 	  console.log('这是login')
 	  //console.log(Login)
 	  //console.log(typeof Login)
 	 // console.log(Login.isShowLogin)
-	  this.isShowLogin = !this.isShowLogin;
-    // return this.http
-            // .get(this.userLoginURL)
-            // .map((response: Response) => {
-              // let user = response.json();
-              // console.log("user object>"+user);
-              // if(user && user.token){
-                // localStorage.setItem("currentUser",JSON.stringify(user));
-                // this.subject.next(Object.assign({},user));
-              // }
-              // return response;
-            // })
-            // .subscribe(
-                // data => {
-                    // console.log("login success>"+data);
-                // },
-                // error => {
-                    // console.error(error);
-                // }
-            // );
+	  this.isShowLogin = true;
+	  this.isLoggedin = !this.isLoggedin;
   }
 
-  public logout():void{
+  public logout():void{//退出控制
     // localStorage.removeItem("currentUser");
     // this.subject.next(Object.assign({}));
+  }
+  
+  public closeLogin(){ //关闭登录弹窗
+	  this.isShowLogin = false;
+	  this.isLoggedin = false;
   }
 }

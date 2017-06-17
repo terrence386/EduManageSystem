@@ -9,8 +9,9 @@
         <button class="apple">申请成为老师</button>
     </div>
 </div>
+<div id="fullBg" *ngIf="this.LoginService.isShowLogin" style="display: block;"></div>
 <div class="myBtn1" *ngIf="this.LoginService.isShowLogin" style="display:block;">
-    <img src="../assets/X_2@1x.png" alt="" class="z_xx" style="float:right;">
+    <img src="../assets/X_2@1x.png" alt="" class="z_xx" style="float:right;cursor:pointer;" (click)="close()">
     <p><img src="../assets/z_logo2.jpg" alt=""></p>
     <p>教  学  管  理  系  统</p>
     <ul>
