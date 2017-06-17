@@ -6,13 +6,15 @@ import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
 
 //服务
-import { LoginService } from './Login/login.service';
+//import { LoginService } from './Login/login.service';
 
 import { AppComponent } from './app.component';
 
 //在这里引入自己定义的模块组件
 import { HeaderComponent } from './Header/Header.component';
 import { Login } from './Login/login.component';
+
+
 
 @NgModule({
 	//声明组件
@@ -33,7 +35,7 @@ import { Login } from './Login/login.component';
 	])
   ],
   providers: [
-	LoginService
+	//LoginService
   ],
   bootstrap: [AppComponent]
 })

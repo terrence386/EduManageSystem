@@ -7,15 +7,15 @@ import { Http, Headers, Response } from '@angular/http';
 import { Login } from './login.component'
 @Injectable()
 export class LoginService {
-	data:{
-		isShowLogin:true
-	}
-  constructor(
+	//data:Object = {
+		isShowLogin:boolean = false
+	//}
+   constructor(
 	public http:Http,
-	public data:data
-  ){}
+	//isShowLogin
+   ){}
 	onInit(){
-		//console.log(Login.isShowLogin)
+		//console.log(Login)
 	}
   // public get currentUser():Observable<User>{
      // // return this.subject.asObservable();
@@ -25,10 +25,10 @@ export class LoginService {
 	  
 	  console.log(this)
 	  console.log('这是login')
-	  console.log(Login)
-	  console.log(typeof Login)
+	  //console.log(Login)
+	  //console.log(typeof Login)
 	 // console.log(Login.isShowLogin)
-	//  this.isShowLogin = !this.isShowLogin;
+	  this.isShowLogin = !this.isShowLogin;
     // return this.http
             // .get(this.userLoginURL)
             // .map((response: Response) => {
