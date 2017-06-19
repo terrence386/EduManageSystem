@@ -1,1 +1,151 @@
 /* You can add global styles to this file, and also import other style files */
+/***common.css**/
+body, button, select, textarea, input, label, option, fieldset, legend{font-family: ΢���ź�E\8F6F\96C5\9ED1,Tahoma,Verdana,PingFang-SC-Medium;font-size: 14px;line-height: 18px;color: #444;}
+body, div, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, input, textarea, button, p, blockquote, th, td{margin: 0;padding: 0;}
+textarea{resize: none}
+.clear{height:1px;overflow:hidden;clear:both;}
+a,img{border:0;}
+a{color: #000;text-decoration: none;}
+li{list-style-type:none;}
+.fl{float:left;}
+.fr{float:right;}
+.nf{clear:both;}
+.red{color:red;font-weight:bold;}
+.green{color:#00b500;font-weight:bold;}
+.ds{display:block;}
+.hid{overflow:hidden;}
+.clearfix{*zoom:1}
+.clearfix:after{display:block;visibility:hidden;clear:both;height:0;content:'.';font-size:0}
+.jianbian{background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#f4f4f4),color-stop(100%,#eee));background: -webkit-linear-gradient(top,#f4f4f4 0,#eee 100%);background: linear-gradient(to bottom,#f4f4f4 0,#eee 100%);}
+.bottomshadow{border-bottom: solid 1px #B3B3B3;-webkit-box-shadow: 0 1px 1px 0 #DFDFDF;box-shadow: 0 1px 1px 0 #DFDFDF;}
+body{
+    font-family: PingFangSC-Regular, sans-serif;
+}
+button{
+    background: none;
+}
+/*input{*/
+    /*border-width: 1px !important;*/
+/*}*/
+/****header***/
+header,header>div,.l_nav{width:100%;}
+header{
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+    text-align: center;
+    background: #2E9DFC;
+    color:#FFF;
+}
+header a:hover {
+    color: #fff;
+}
+
+
+header div,header div li{
+    display: inline-block;
+}
+header div li a{
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    color: #FFF;
+    font-size: 14px;
+    vertical-align: bottom;
+    border-radius: 5px 5px 0 0;
+    background:#247DC9;
+}
+header div li a.z_cur{
+    background: #F5F5F5 ;
+    color: #2E9DFC;
+    border-radius: 5px 5px 0 0;
+}
+header>div>div>span>img{
+    display: inline-block;
+    vertical-align: middle;
+}
+header>div>div:nth-child(1){
+    float: left;
+}
+/**/
+header>div>div:nth-child(1) span{
+    display:inline-block;
+    height:50px;
+    font-size:18px;
+    line-height:50px;
+}
+header>div>div:nth-child(1) span>img{
+    display: inline-block;
+    height:25px;
+    width:80px;
+    padding:11px 7px 13px 60px;
+    box-sizing: content-box;
+}
+/**/
+header>div>div:nth-child(3){
+    float: right;
+}
+header>div>div:nth-child(3) img{
+    display: inline-block;
+    vertical-align: middle;
+    margin:0 5px 0 20px;
+}
+
+.l_nav{
+    height: 70px;
+    line-height: 70px;
+    background: #F5F5F5;
+    border: 1px solid #E4E9F0;
+    /*padding-left: 550px;*/
+}
+
+
+/*header*/
+.l_nav div  {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 45px;
+    cursor: pointer;
+}
+.l_nav_new>div>div{
+    display: inline-block;
+}
+.l_nav i {
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: relative;
+    left: 15px;
+}
+.l_nav div.cur>i img:nth-child(1) {
+    z-index: 100;
+}
+.l_nav img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: auto;
+    position: absolute;
+}
+.l_nav  a{
+    display: inline-block;
+    position: relative;
+}
+.l_nav .cur  span {
+    color: #2E9DFC;
+}
+.l_nav span {
+    display: inline-block;
+    font-size: 14px;
+    color: #003500;
+    line-height: 35px;
+    vertical-align: top;
+}
+.l_nav div.cur i img:nth-child(1) {
+    z-index: 100;
+}
+
+/***导入需要的bootstrap文件***/
+@import "~bootstrap/dist/css/bootstrap.min.css";
