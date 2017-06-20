@@ -16,13 +16,18 @@ export class AppComponent {
     ) {
         //console.log(this.userLoginService);
     }
-  ngOnInit(){//初始化加载事件 onInit
-	document.body.style.margin = '0';
-	console.log(this)
-  }
-  public showLogin():void{
+	ngOnInit(){//初始化加载事件 onInit
+		document.body.style.margin = '0';
+		console.log(this)
+		this.currentUser = JSON.parse(localStorage.getItem("currentUser"));
+	}
+	public showLogin():void{
 		//app.isShowLogin = !isShowLogin;
 		this.LoginService.clickLogin();
 		//console.log(this)
     }
+	public logout():void{
+		this.LoginService.logout();
+	}
+	
 }
