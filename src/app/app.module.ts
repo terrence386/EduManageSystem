@@ -1,12 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpModule,JsonpModule ,Http} from '@angular/http';//导入服务模块
 //路由
 import { RouterModule }   from '@angular/router';
 
 //服务
-//import { LoginService } from './Login/login.service';
+import { LoginService } from './Login/login.service';
 
 import { AppComponent } from './app.component';
 
@@ -33,6 +33,7 @@ import { ElectronicTabContent } from './ElectronicWork/electronicTabContent/elec
     BrowserModule,
     FormsModule,
     HttpModule,
+    JsonpModule,
 	RouterModule.forRoot([//路由配置
 		{
         path: '',
@@ -45,7 +46,7 @@ import { ElectronicTabContent } from './ElectronicWork/electronicTabContent/elec
 	])
   ],
   providers: [
-	//LoginService
+	LoginService
   ],
   bootstrap: [AppComponent]
 })

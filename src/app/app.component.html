@@ -22,7 +22,7 @@
                     </ul>
                 </div>
                 <div style="margin-right:50px;" class="user-box">
-                    <span><img style="width:30px" src="../assets/mdpi/woman.png" alt="">您好！张老师</span>
+                    <span *ngIf="currentUser?.userName"><img style="width:30px" src="../assets/mdpi/woman.png" alt="">您好！{{currentUser?.userName}}</span>
                     <span class="logout">[退出]</span>
                 </div>
         </div>
