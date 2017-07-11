@@ -53,7 +53,17 @@ import { dataviewContent } from './Dataview/dataviewContent/dataviewContent.comp
 	  },
     {
       path:'dataview',
-      component:dataView
+      component:dataView,
+      children:[
+      {//配置子路由
+        path:'one',
+        component:dataviewContent
+      },
+      {
+        path:'two',
+        component: ElectronicWork
+      }
+      ]
     }
     
 	])
