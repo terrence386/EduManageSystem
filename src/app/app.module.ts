@@ -16,6 +16,11 @@ import { Login } from './Login/login.component';//登录
 import { ElectronicWork } from './ElectronicWork/electronic.component';//电子作业
 import { ElectronicTab } from './ElectronicWork/electronicTab/electronicTab.component';//电子作业tab
 import { ElectronicTabContent } from './ElectronicWork/electronicTabContent/electronicTabContent.component';//电子作业主体内容
+import { dataView } from './Dataview/dataview.component';
+import { dataviewTab} from './Dataview/dataviewTab/dataviewTab.component';
+import { dataviewContent } from './Dataview/dataviewContent/dataviewContent.component';
+
+
 
 
 
@@ -27,7 +32,10 @@ import { ElectronicTabContent } from './ElectronicWork/electronicTabContent/elec
 	Login,
 	ElectronicWork,
 	ElectronicTab,
-	ElectronicTabContent
+	ElectronicTabContent,
+  dataView,
+  dataviewTab,
+  dataviewContent
   ],
   imports: [
     BrowserModule,
@@ -38,11 +46,16 @@ import { ElectronicTabContent } from './ElectronicWork/electronicTabContent/elec
 		{
         path: '',
         component: Login
-      },
+    },
 	  {
-		path:'elecWork',
-		component:ElectronicWork
-	  }
+		  path:'elecWork',
+		  component:ElectronicWork
+	  },
+    {
+      path:'dataview',
+      component:dataView
+    }
+    
 	])
   ],
   providers: [

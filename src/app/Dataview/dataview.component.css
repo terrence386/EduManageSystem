@@ -1,0 +1,19 @@
+.c_nav-box-two dl {
+    padding: 10px;
+}
+.c_second-nav-active {
+    color: #2E9DFC;
+}
+body, div, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, input, textarea, button, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+dl {
+    /* list-style-type: none; */
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.c_nav-box-two-box>a{
+    float: left !important;
+}

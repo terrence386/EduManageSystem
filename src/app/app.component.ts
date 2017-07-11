@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { echarts } from 'echarts';
+
 
 import { User } from './Login/user-model/user-model';//导入用户
 //服务

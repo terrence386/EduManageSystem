@@ -1,0 +1,33 @@
+.c_nav-box-two {
+    width: 100%;
+    height: 70px;
+    background: #F5F5F5;
+    border: 1px solid #E7EBF0;
+    color: #9B9B9B;
+}
+.c_nav-box-two-box {
+    display: inline-block;
+    margin-left: 500px;
+}
+.c_nav-box-two dl {
+    padding: 10px;
+}
+.c_second-nav-active {
+    color: #2E9DFC;
+}
+.c_nav-box-two dl dt, .l_nav-box-two dl dd {
+    text-align: center;
+}
+body, div, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, input, textarea, button, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+dt {
+    font-weight: 700;
+}
+dd, dt {
+    line-height: 1.42857143;
+}
+.c_nav-box-two-box>a{
+    float: left !important;
+}
