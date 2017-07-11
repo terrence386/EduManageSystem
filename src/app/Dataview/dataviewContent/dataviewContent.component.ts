@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgModule } from '@angular/core';
-import * as echarts from 'echarts';
+import  echarts from 'echarts';
 
 //服务
 @Component({
