@@ -62,7 +62,12 @@ import { dataviewContent } from './Dataview/dataviewContent/dataviewContent.comp
       {
         path:'two',
         component: ElectronicWork
+      },
+      {
+        path:'**',//如果没有定义的路由，就跳转到one
+        redirectTo:'one'
       }
+      
       ]
     }
     
