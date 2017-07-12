@@ -7,6 +7,7 @@ import { RouterModule }   from '@angular/router';
 
 //服务
 import { LoginService } from './Login/login.service';
+import { dataviewService } from './Dataview/dataview.service';
 
 import { AppComponent } from './app.component';
 
@@ -16,9 +17,12 @@ import { Login } from './Login/login.component';//登录
 import { ElectronicWork } from './ElectronicWork/electronic.component';//电子作业
 import { ElectronicTab } from './ElectronicWork/electronicTab/electronicTab.component';//电子作业tab
 import { ElectronicTabContent } from './ElectronicWork/electronicTabContent/electronicTabContent.component';//电子作业主体内容
-import { dataView } from './Dataview/dataview.component';
+import { dataView } from './Dataview/dataview.component';//数据查看
 import { dataviewTab} from './Dataview/dataviewTab/dataviewTab.component';
 import { dataviewContent } from './Dataview/dataviewContent/dataviewContent.component';
+import { studentData } from './Dataview/studentData/studentData.component';
+import { studentDataModel } from './Dataview/studentData/studentDataModel/studentDataModel.component';
+
 
 
 
@@ -35,7 +39,9 @@ import { dataviewContent } from './Dataview/dataviewContent/dataviewContent.comp
 	ElectronicTabContent,
   dataView,
   dataviewTab,
-  dataviewContent
+  dataviewContent,
+  studentData,
+  studentDataModel
   ],
   imports: [
     BrowserModule,
@@ -61,7 +67,7 @@ import { dataviewContent } from './Dataview/dataviewContent/dataviewContent.comp
       },
       {
         path:'two',
-        component: ElectronicWork
+        component: studentData
       },
       {
         path:'**',//如果没有定义的路由，就跳转到one
@@ -74,7 +80,8 @@ import { dataviewContent } from './Dataview/dataviewContent/dataviewContent.comp
 	])
   ],
   providers: [
-	LoginService
+	LoginService,
+  dataviewService
   ],
   bootstrap: [AppComponent]
 })
